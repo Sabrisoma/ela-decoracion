@@ -90,7 +90,15 @@ p{
     justify-content: space-between;
     padding: 16px;
     list-style: none;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
+.nav-link{
+    font-size: 1.1rem;
+}
+  
 
 .navbar ul{
     display: flex;
