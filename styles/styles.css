@@ -1,0 +1,148 @@
+/*Fuente nunito*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body{
+    background-color: white
+}
+
+
+
+h1{
+    color: #062242;
+    font-family: Georgia;
+    text-align: center;
+    font-size: 45px;
+}
+nav{
+    color: gray;
+}
+h2{
+    color: #062242;
+    text-align: center;
+    font-size: 35px;
+}
+
+.logo{
+    height: 120px;
+    width: 120px;
+
+}
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.banner{
+    height: 700px;
+    width: 1920px;
+    block-size: auto;
+}
+
+.iconos{
+    height: 350px;
+    width: 350px;
+
+}
+.copyrigth{
+    color: #062242;
+}
+
+.biografia{
+    height: 600px;
+    width: 600px;
+    block-size: auto;
+    
+}
+
+.historia{
+    text-align: center;
+    font-size: 35px;
+}
+
+.texto-presentacion {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #062242
+  
+}
+
+.info {
+    color: #062242;
+    font-family: Georgia;
+    text-align: center;
+    font-size: 45px;
+}
+
+p{
+    color: #062242;
+    font-family: Georgia;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    list-style: none;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 13px;
+    list-style: none;
+
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #062242;
+    font-size: 20px;
+    list-style: none;
+
+}
+
+.card-productos{
+    margin: 20px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+
+
+}
+
+/* PRODUCTOS */
+
+.card{
+    padding: 16px;
+    border: 1px solid #062242;
+    border-radius: 5px;
+}
+.cardimg {
+    width: 100px;
+}
+.card h5{
+    margin: 16px 0 ;
+}
+
+.card-button{
+    text-decoration: none;
+    color: #062242;
+    padding: 8px;
+    border: 1px solid #062242;
+    display: inline-block;
+    border-radius: 5px;
+
+}
