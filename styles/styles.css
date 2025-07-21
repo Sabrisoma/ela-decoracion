@@ -1,6 +1,3 @@
-/*Fuente nunito*/
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 body{
     background-color: white
 }
@@ -16,6 +13,11 @@ h1{
 nav{
     color: gray;
 }
+
+.custom-navbar{
+    background-color: #062242;
+}
+
 h2{
     color: #062242;
     text-align: center;
