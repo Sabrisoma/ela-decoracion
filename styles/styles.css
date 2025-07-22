@@ -2,11 +2,9 @@ body{
     background-color: white
 }
 
-
-
 h1{
     color: #062242;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Sergio Trendy";
     text-align: center;
     font-size: 45px;
 }
@@ -69,8 +67,8 @@ img {
 .texto-presentacion {
   max-width: 800px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-family:"Dreaming Outloud Sans",sans-serif
+  font-size: 15px;
   line-height: 1.6;
   color: #062242
   
@@ -78,14 +76,14 @@ img {
 
 .info {
     color: #062242;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Dreaming Outloud Sans", sans-serif;
     text-align: center;
     font-size: 45px;
 }
 
 p{
     color: #062242;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Dreaming Outloud Sans", sans-serif;
     font-size: 15px;
     line-height: 1;
     text-align: center;
@@ -192,6 +190,7 @@ p{
 .p-footer{
     text-align: left;
 }
+/*FOOTER*/
 
 footer{
     background-color: #f8f9fa;
