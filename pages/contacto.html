@@ -51,11 +51,11 @@
         <form>
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ej: Sabrina Somacal">
+                <input type="text" class="form-control" id="nombre" placeholder="Ej: Tu nombre Completo">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Ej: sabrina@email.com">
+                <input type="email" class="form-control" id="email" placeholder="Ej: email@email.com">
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Teléfono (opcional)</label>
@@ -63,10 +63,38 @@
             </div>
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu consulta aquí..."></textarea>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Dejanos tu consulta"></textarea>
              </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+
+        <section class="container my-5">
+           <div class="row">
+                <!-- Dirección y horarios -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                         <div class="card-body">
+                            <h5 class="card-title">Nuestra ubicación</h5>
+                            <p class="card-text mb-1"><strong>Dirección:</strong> Av. Corrientes 1234</p>
+                            <p class="card-text mb-1"><strong>Teléfono:</strong> (011) 1234-5678</p>
+                            <p class="card-text"><strong>Horarios:</strong> Lunes a viernes de 10 a 18 hs</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+            <!-- Mapa responsivo -->
+            <div class="col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.876370499441!2d-58.41267608477039!3d-34.61016448045965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2ed1c3248f%3A0x6e2d6e77f0a7a9b1!2sAv.%20Corrientes%201234%2C%20C1043%20CABA!5e0!3m2!1ses-419!2sar!4v1628709576196!5m2!1ses-419!2sar" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
     </main>
 
   <!-- FOOTER -->
