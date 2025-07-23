@@ -14,7 +14,7 @@ h2 {
   text-align: center;
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(pink, rgb(235, 164, 176));
+  background-image: linear-gradient(pink, rgb(218, 127, 142));
 }
 
 p {
@@ -42,31 +42,9 @@ p {
   line-height: 1;
 }
 
-navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 16px;
-  list-style: none;
-  color: #FEF1F7;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-nav {
-  color: #062242;
-}
-
-.custom-navbar {
-  background-color: #062242;
-}
-
 .logo {
   height: 120px;
   width: 120px;
-}
-
-.logo {
   max-width: 100%;
   height: auto;
 }
@@ -118,12 +96,29 @@ img {
   font-size: 45px;
 }
 
-.nav-link {
-  font-size: 1.1rem;
-  color: #fef1f7;
+.product {
+  color: #062242;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 3;
+  background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }
 
-.navbar ul {
+nav {
+  color: #062242;
+}
+nav .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  list-style: none;
+  color: #FEF1F7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav .navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,19 +126,31 @@ img {
   gap: 13px;
   list-style: none;
 }
-
-.navbar ul li {
+nav .navbar ul li {
   list-style: none;
+}
+nav .custom-navbar {
+  background-color: #062242;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
-  text-decoration: none;
+  font-size: 1.1rem;
   color: #062242;
-  font-size: 20px;
-  list-style: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
 }
 .nav-link:hover {
-  color: crimson;
+  color: rgb(155, 47, 69);
+}
+
+.enlace-personalizado {
+  color: #DEA4DB;
+  font-weight: bold;
 }
 
 .card-productos {
@@ -155,41 +162,57 @@ img {
   flex-wrap: wrap;
 }
 
-/* PRODUCTOS */
 .card {
   padding: 16px;
   border: 1px solid #062242;
   border-radius: 5px;
+}
+.card h5 {
+  margin: 16px 0;
 }
 
 .cardimg {
   width: 100px;
 }
 
-.card h5 {
-  margin: 16px 0;
-}
-
-.card-button {
-  text-decoration: none;
-  color: #062242;
-  padding: 8px;
-  border: 1px solid #062242;
+.etiqueta-pago,
+.etiqueta-envio {
+  background-color: #DEA4BD;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
   display: inline-block;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.card-button:hover {
-  color: crimson;
 }
 
-.product {
-  color: #062242;
+.boton-personalizado {
+  color: #6fb1cf;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  text-align: center;
-  line-height: 3;
-  background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
+}
+.boton-personalizado:hover {
+  color: mediumpurple;
+}
+
+.imginicio {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  object-fit: cover;
+}
+
+.btn-buscar {
+  color: #DEA4DB;
+  border-color: #DEA4DB;
+}
+.btn-buscar:hover {
+  background-color: #DEA4DB;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -205,16 +228,14 @@ img {
     gap: 10px;
   }
 }
-/*BOOTSTAP*/
-.imginicio {
-  width: 100%;
-  height: auto;
-  padding: 16px;
-  object-fit: cover;
-}
-
 .p-footer {
   text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: #FEF1F7;
+  padding: 2rem 0 3rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

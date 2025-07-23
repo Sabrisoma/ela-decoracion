@@ -1,0 +1,120 @@
+@use "../utilities/variables";
+
+
+nav {
+    color: variables.$main-color;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+        list-style: none;
+        color: variables.$hover-color;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            list-style: none;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    .custom-navbar {
+        background-color: variables.$main-color;
+        padding: 1rem;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: variables.$main-color;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+
+    &:hover {
+        color: rgb(155, 47, 69);
+    }
+}
+
+.enlace-personalizado {
+    color: #DEA4DB;
+    font-weight: bold;
+}
+
+.card-productos {
+    margin: 20px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid variables.$main-color;
+    border-radius: 5px;
+
+    h5 {
+        margin: 16px 0;
+    }
+}
+
+.cardimg {
+    width: 100px;
+}
+
+.etiqueta-pago,
+.etiqueta-envio {
+    background-color: #DEA4BD;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.boton-personalizado {
+    color: #6fb1cf;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+        color: mediumpurple;
+    }
+}
+
+.imginicio {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    object-fit: cover;
+}
+
+.btn-buscar {
+    color: #DEA4DB;
+    border-color: #DEA4DB;
+
+    &:hover {
+        background-color: #DEA4DB;
+        color: white;
+    }
+}

@@ -1,0 +1,109 @@
+@use "../utilities/variables";
+
+h1 {
+    color: variables.$main-color;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: variables.$hover-color;
+}
+
+h2 {
+    color: variables.$main-color;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(pink, rgb(218, 127, 142));
+}
+
+p {
+    color: variables.$main-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1;
+}
+
+.questions {
+    color: variables.$main-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 3;
+    background-image: linear-gradient(rgb(155, 144, 146), rgb(255, 183, 195));
+}
+
+.parrafo {
+    color: variables.$main-color;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.banner {
+    height: 700px;
+    width: 1920px;
+    block-size: auto;
+}
+
+.iconos {
+    height: 350px;
+    width: 350px;
+}
+
+.copyrigth {
+    color: variables.$main-color;
+}
+
+.biografia {
+    height: 600px;
+    width: 600px;
+    block-size: auto;
+}
+
+.historia {
+    text-align: center;
+    font-size: 35px;
+}
+
+.texto-presentacion {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: variables.$main-color;
+}
+
+.info {
+    color: variables.$main-color;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+.product {
+    color: variables.$main-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 3;
+    background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
+}
