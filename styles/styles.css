@@ -61,7 +61,7 @@ p {
   width: 100%;
   text-align: center;
 }
-@media (min: width 992px) {
+@media (min-width: 992px) {
   .sobremi-texto {
     width: 50%;
     text-align: left;
@@ -74,6 +74,7 @@ p {
 .sobremi-texto h4 {
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .sobremi-texto p {
   font-size: 1.1rem;
