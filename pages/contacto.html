@@ -25,24 +25,32 @@
 
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid d-flex justify-content-between align-items-center">
-                <ul class="navbar-nav d-flex flex-row gap-4 mb-0">
-                    <li class="nav-item">
-                        <a class="nav-link enlace-personalizado" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link enlace-personalizado" href="./productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link enlace-personalizado" href="./sobreMi.html">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link enlace-personalizado text-decoration-nonegt">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link enlace-personalizado" href="./preguntasfrecuentes.html">Preguntas
-                            Frecuentes</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation ">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-column flex-lg-row gap-3 mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link enlace-personalizado" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlace-personalizado" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlace-personalizado" href="./sobreMi.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link enlace-personalizado text-decoration-nonegt">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlace-personalizado" href="./preguntasfrecuentes.html">Preguntas
+                                Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="boton-personalizado btn-buscar" type="submit">Buscar</button>
@@ -146,6 +154,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
 
