@@ -1,8 +1,8 @@
 h1 {
-  color: #062242;
   text-align: center;
+  font-family: arial;
+  color: #062242;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -11,17 +11,17 @@ body {
 
 h2 {
   color: #062242;
-  text-align: center;
   font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(pink, rgb(218, 127, 142));
+  text-align: center;
+  font-family: arial;
 }
 
 p {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
   text-align: center;
+  font-family: arial;
+  font-size: 15px;
   line-height: 1;
 }
 
@@ -84,18 +84,18 @@ p {
 
 .questions {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
   text-align: center;
+  font-family: arial;
+  font-size: 20px;
   line-height: 3;
   background-image: linear-gradient(rgb(155, 144, 146), rgb(255, 183, 195));
 }
 
 .parrafo {
   color: #062242;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 15px;
   text-align: center;
+  font-family: arial;
+  font-size: 15px;
   line-height: 1;
 }
 
@@ -158,16 +158,16 @@ img {
 
 .info {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-family: arial;
   font-size: 45px;
 }
 
 .product {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
   text-align: center;
+  font-family: arial;
+  font-size: 22px;
   line-height: 3;
   background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }
@@ -178,7 +178,8 @@ nav {
 nav .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   padding: 16px;
   list-style: none;
   color: #FEF1F7;
@@ -199,8 +200,12 @@ nav .navbar ul li {
 nav .custom-navbar {
   background-color: #062242;
   padding: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-collapse {
+  display: none;
 }
 
 .nav-link {
@@ -225,6 +230,7 @@ nav .custom-navbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 15px;
   flex-wrap: wrap;
 }

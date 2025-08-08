@@ -1,10 +1,12 @@
 @use "../utilities/variables";
+@import "../utilities/mixins";
+
 
 h1 {
+    @include desing( center, arial);
     color: variables.$main-color;
-    text-align: center;
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
@@ -13,17 +15,15 @@ body {
 
 h2 {
     color: variables.$main-color;
-    text-align: center;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(pink, rgb(218, 127, 142));
+    @include desing( center, arial);
 }
 
 p {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
+    @include desing( center, arial);
     font-size: 15px;
-    text-align: center;
     line-height: 1;
 }
 
@@ -91,18 +91,16 @@ p {
 
 .questions {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
+    @include desing( center, arial);
     font-size: 20px;
-    text-align: center;
     line-height: 3;
     background-image: linear-gradient(rgb(155, 144, 146), rgb(255, 183, 195));
 }
 
 .parrafo {
     color: variables.$main-color;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @include desing( center, arial);
     font-size: 15px;
-    text-align: center;
     line-height: 1;
 }
 
@@ -167,17 +165,15 @@ img {
 
 .info {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    @include desing( center, arial);
     font-size: 45px;
 }
 
 
 .product {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
+    @include desing( center, arial);
     font-size: 22px;
-    text-align: center;
     line-height: 3;
     background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }

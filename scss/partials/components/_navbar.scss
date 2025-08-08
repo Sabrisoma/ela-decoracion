@@ -1,13 +1,13 @@
 @use "../utilities/variables";
+@import "../utilities/mixins";
 
 
 nav {
     color: variables.$main-color;
 
     .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+
+        @include flex (row, center, center);
         padding: 16px;
         list-style: none;
         color: variables.$hover-color;
@@ -15,10 +15,7 @@ nav {
         padding-bottom: 1rem;
 
         ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include flex (row, center, center);
             gap: 13px;
             list-style: none;
 
@@ -31,12 +28,13 @@ nav {
     .custom-navbar {
         background-color: variables.$main-color;
         padding: 1rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 }
+
 .navbar-collapse {
-  display: none;
+    display: none;
 }
 
 .nav-link {
@@ -59,9 +57,7 @@ nav {
 
 .card-productos {
     margin: 20px 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex (row, center, center);
     gap: 15px;
     flex-wrap: wrap;
 }
