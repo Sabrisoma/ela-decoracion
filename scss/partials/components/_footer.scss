@@ -1,4 +1,5 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 @media (max-width: 768px) {
     .card-productos {

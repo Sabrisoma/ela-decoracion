@@ -1,0 +1,19 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin boton-estilos ($radius, $padding, $font-weigth: 600) {
+    border-radius: $radius;
+    padding: $padding;
+    font-weight: $font-weigth;
+}
+
+@mixin etiqueta-estilos ($padding, $radius, $font-size, $weight) {
+    padding: $padding;
+    border-radius: $radius;
+    font-size: $font-size;
+    font-weight: $weight;
+}
