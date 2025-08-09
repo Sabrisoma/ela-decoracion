@@ -3,19 +3,16 @@
 @import "../utilities/mixins";
 
 .logo {
-    height: 120px;
-    width: 120px;
+    @include size-params(120px, 120px);
     max-width: 100%;
     height: auto;
 }
 
 img {
-    height: 300px;
-    width: 300px;
+    @include size-params(300px, 300px);
 }
 
 .banner {
-    height: 700px;
-    width: 1920px;
+    @include size-params(720px, 1920px);
     block-size: auto;
 }

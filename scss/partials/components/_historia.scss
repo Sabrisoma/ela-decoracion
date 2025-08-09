@@ -3,8 +3,7 @@
 @import "../utilities/mixins";
 
 .biografia {
-    height: 600px;
-    width: 600px;
+    @include size-params(600px, 600px);
     block-size: auto;
 }
 
