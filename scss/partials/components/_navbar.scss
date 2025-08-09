@@ -10,7 +10,7 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         padding: 16px;
-        list-style: none;
+        @extend .list-style;
         color: variables.$hover-color;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -18,10 +18,10 @@ nav {
         ul {
             @include flex(row, center, center);
             gap: 13px;
-            list-style: none;
+            @extend .list-style;
 
             li {
-                list-style: none;
+                @extend .list-style;
             }
         }
     }
@@ -48,7 +48,7 @@ nav {
 }
 
 .enlace-personalizado {
-    color: #DEA4DB;
+    color: variables.$second-color;
     font-weight: bold;
 }
 
@@ -83,9 +83,8 @@ nav {
     background-color: #DEA4BD;
     color: white;
     padding: 5px 12px;
-    border-radius: 20px;
+    @include border(20px, 500px);
     font-size: 0.9rem;
-    font-weight: 500;
     display: inline-block;
 }
 

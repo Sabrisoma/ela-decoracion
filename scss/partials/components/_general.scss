@@ -6,7 +6,7 @@
 h1 {
     color: variables.$main-color;
     @extend .text-font;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 
@@ -24,23 +24,20 @@ h2 {
 p {
     color: variables.$main-color;
     @extend .text-font;
-    font-size: 15px;
-    line-height: 1;
+    @include line(1, 15px);
 }
 
 .questions {
     color: variables.$main-color;
     @extend .text-font;
-    font-size: 20px;
-    line-height: 3;
+    @include line(3, 20px);
     background-image: linear-gradient(rgb(155, 144, 146), rgb(255, 183, 195));
 }
 
 .parrafo {
     color: variables.$main-color;
     @extend .text-font;
-    font-size: 15px;
-    line-height: 1;
+    @include line(1, 15px);
 }
 
 @keyframes fadeSlideIn {
@@ -70,7 +67,6 @@ p {
 .product {
     color: variables.$main-color;
     @extend .text-font;
-    font-size: 22px;
-    line-height: 2;
+    @include line(2, 22px);
     background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }

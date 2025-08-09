@@ -8,3 +8,14 @@
   height: $height;
   width: $width;
 }
+
+@mixin border ($radius, $font){
+  border-radius: $radius;
+  font-weight: $font;
+}
+
+@mixin line ($line, $fontsize){
+  line-height: $line;
+  font-size: $fontsize;
+}
+
