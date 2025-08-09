@@ -1,10 +1,13 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
+@import "../utilities/mixins";
+
 
 h1 {
     color: variables.$main-color;
-    text-align: center;
+    @extend .text-font;
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
@@ -13,96 +16,30 @@ body {
 
 h2 {
     color: variables.$main-color;
-    text-align: center;
+    @extend .text-font;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(pink, rgb(218, 127, 142));
 }
 
 p {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
+    @extend .text-font;
     font-size: 15px;
-    text-align: center;
     line-height: 1;
 }
 
-.sobremi-section {
-    padding: 2rem 1rem;
-
-
-    .sobremi-container {
-        display: flex;
-        flex-direction: column;
-
-        @media (min-width:992px) {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-}
-
-.sobremi-imagen {
-    width: 100%;
-    margin-bottom: 2rem;
-
-    img {
-        width: 100%;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-    }
-
-    @media (min-width: 992px) {
-        width: 50%;
-        margin-bottom: 0;
-        padding-right: 2rem;
-    }
-}
-
-.sobremi-texto {
-    width: 100%;
-    text-align: center;
-
-    @media (min-width: 992px) {
-        width: 50%;
-        text-align: left;
-    }
-
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    h4 {
-        font-weight: bold;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-    }
-}
-
-
 .questions {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
+    @extend .text-font;
     font-size: 20px;
-    text-align: center;
     line-height: 3;
     background-image: linear-gradient(rgb(155, 144, 146), rgb(255, 183, 195));
 }
 
 .parrafo {
     color: variables.$main-color;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @extend .text-font;
     font-size: 15px;
-    text-align: center;
     line-height: 1;
 }
 
@@ -118,66 +55,23 @@ p {
     }
 }
 
-.logo {
-    height: 120px;
-    width: 120px;
-    max-width: 100%;
-    height: auto;
-}
-
-img {
-    height: 300px;
-    width: 300px;
-}
-
-.banner {
-    height: 700px;
-    width: 1920px;
-    block-size: auto;
-}
-
 .iconos {
     height: 350px;
     width: 350px;
 }
 
-.copyrigth {
-    color: variables.$main-color;
-}
 
-.biografia {
-    height: 600px;
-    width: 600px;
-    block-size: auto;
-}
-
-.historia {
-    text-align: center;
-    font-size: 35px;
-}
-
-.texto-presentacion {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: variables.$main-color;
-}
 
 .info {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    @extend .text-font;
     font-size: 45px;
 }
 
-
 .product {
     color: variables.$main-color;
-    font-family: Arial, Helvetica, sans-serif;
+    @extend .text-font;
     font-size: 22px;
-    text-align: center;
-    line-height: 3;
+    line-height: 2;
     background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }

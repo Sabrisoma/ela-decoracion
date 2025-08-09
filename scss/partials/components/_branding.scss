@@ -1,0 +1,21 @@
+@use "../utilities/variables";
+@use "../utilities/extend";
+@import "../utilities/mixins";
+
+.logo {
+    height: 120px;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.banner {
+    height: 700px;
+    width: 1920px;
+    block-size: auto;
+}

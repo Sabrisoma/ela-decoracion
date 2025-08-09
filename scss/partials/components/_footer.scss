@@ -1,4 +1,7 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
+@use "../utilities/mixins";
+
 
 @media (max-width: 768px) {
     .card-productos {
@@ -14,6 +17,10 @@
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.copyrigth {
+    color: variables.$main-color;
 }
 
 .p-footer {

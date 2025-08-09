@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-font, h1, h2, p, .questions, .parrafo, .info, .product {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
   color: #062242;
-  text-align: center;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -11,91 +19,26 @@ body {
 
 h2 {
   color: #062242;
-  text-align: center;
   font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(pink, rgb(218, 127, 142));
 }
 
 p {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  text-align: center;
   line-height: 1;
-}
-
-.sobremi-section {
-  padding: 2rem 1rem;
-}
-.sobremi-section .sobremi-container {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 992px) {
-  .sobremi-section .sobremi-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.sobremi-imagen {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.sobremi-imagen img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-@media (min-width: 992px) {
-  .sobremi-imagen {
-    width: 50%;
-    margin-bottom: 0;
-    padding-right: 2rem;
-  }
-}
-
-.sobremi-texto {
-  width: 100%;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  .sobremi-texto {
-    width: 50%;
-    text-align: left;
-  }
-}
-.sobremi-texto h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.sobremi-texto h4 {
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.sobremi-texto p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  line-height: 1.5;
 }
 
 .questions {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  text-align: center;
   line-height: 3;
   background-image: linear-gradient(rgb(155, 144, 146), rgb(255, 183, 195));
 }
 
 .parrafo {
   color: #062242;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 15px;
-  text-align: center;
   line-height: 1;
 }
 
@@ -109,66 +52,20 @@ p {
     transform: translateX(0);
   }
 }
-.logo {
-  height: 120px;
-  width: 120px;
-  max-width: 100%;
-  height: auto;
-}
-
-img {
-  height: 300px;
-  width: 300px;
-}
-
-.banner {
-  height: 700px;
-  width: 1920px;
-  block-size: auto;
-}
-
 .iconos {
   height: 350px;
   width: 350px;
 }
 
-.copyrigth {
-  color: #062242;
-}
-
-.biografia {
-  height: 600px;
-  width: 600px;
-  block-size: auto;
-}
-
-.historia {
-  text-align: center;
-  font-size: 35px;
-}
-
-.texto-presentacion {
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #062242;
-}
-
 .info {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   font-size: 45px;
 }
 
 .product {
   color: #062242;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
-  text-align: center;
-  line-height: 3;
+  line-height: 2;
   background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }
 
@@ -186,7 +83,6 @@ nav .navbar {
   padding-bottom: 1rem;
 }
 nav .navbar ul {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -199,7 +95,7 @@ nav .navbar ul li {
 nav .custom-navbar {
   background-color: #062242;
   padding: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -233,6 +129,7 @@ nav .custom-navbar {
   padding: 16px;
   border: 1px solid #062242;
   border-radius: 5px;
+  margin: 16px;
 }
 .card h5 {
   margin: 16px 0;
@@ -295,6 +192,10 @@ nav .custom-navbar {
     gap: 10px;
   }
 }
+.copyrigth {
+  color: #062242;
+}
+
 .p-footer {
   text-align: left;
   margin-bottom: 1.5rem;
@@ -303,6 +204,101 @@ nav .custom-navbar {
 footer {
   background-color: #FEF1F7;
   padding: 2rem 0 3rem 0;
+}
+
+.biografia {
+  height: 600px;
+  width: 600px;
+  block-size: auto;
+}
+
+.historia {
+  text-align: center;
+  font-size: 35px;
+}
+
+.texto-presentacion {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #062242;
+}
+
+.sobremi-section {
+  padding: 2rem 1rem;
+}
+.sobremi-section .sobremi-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .sobremi-section .sobremi-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sobremi-imagen {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.sobremi-imagen img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 992px) {
+  .sobremi-imagen {
+    width: 50%;
+    margin-bottom: 0;
+    padding-right: 2rem;
+  }
+}
+
+.sobremi-texto {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .sobremi-texto {
+    width: 50%;
+    text-align: left;
+  }
+}
+.sobremi-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.sobremi-texto h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.sobremi-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.banner {
+  height: 700px;
+  width: 1920px;
+  block-size: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

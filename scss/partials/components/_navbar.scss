@@ -1,5 +1,6 @@
 @use "../utilities/variables";
-
+@use "../utilities/extend";
+@import "../utilities/mixins";
 
 nav {
     color: variables.$main-color;
@@ -15,10 +16,7 @@ nav {
         padding-bottom: 1rem;
 
         ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, center, center);
             gap: 13px;
             list-style: none;
 
@@ -31,12 +29,9 @@ nav {
     .custom-navbar {
         background-color: variables.$main-color;
         padding: 1rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-}
-.navbar-collapse {
-  display: none;
 }
 
 .nav-link {
@@ -70,6 +65,9 @@ nav {
     padding: 16px;
     border: 1px solid variables.$main-color;
     border-radius: 5px;
+    margin:16px;
+
+
 
     h5 {
         margin: 16px 0;

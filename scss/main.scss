@@ -1,4 +1,14 @@
-@use "partials/utilities/variables";
+//BASE/
+@use "partials/base/reset";
+
+//COMPONENTES//
 @use "partials/components/general";
 @use "partials/components/navbar";
 @use "partials/components/footer";
+@use "partials/components/historia";
+@use "partials/components/branding";
+
+//UTILITIES//
+@use "partials/utilities/variables";
+@use "partials/utilities/extend";
+@use "partials/utilities/mixins";
